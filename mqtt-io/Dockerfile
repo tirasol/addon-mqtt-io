@@ -26,6 +26,7 @@ RUN \
     \
     && pip install --upgrade pip==23.0.1 \
     && pip install -r /tmp/requirements.txt \
+    && pip install adafruit-circuitpython-dht \
     \
     && find /usr \
         \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
