@@ -1,4 +1,6 @@
 #    && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi2" \
+#    && pip install git+https://github.com/tirasol/Adafruit_Python_DHT --install-option="--force-pi2" \
+
 ARG BUILD_FROM=ghcr.io/hassio-addons/base:15.0.9
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
@@ -27,7 +29,7 @@ RUN \
     \
     && pip install --upgrade pip==23.0.1 \
     && pip install -r /tmp/requirements.txt \
-    && pip install git+https://github.com/tirasol/Adafruit_Python_DHT --install-option="--force-pi2" \
+    && pip install git+https://github.com/tirasol/Adafruit_Python_DHT \
     \
     && find /usr \
         \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
