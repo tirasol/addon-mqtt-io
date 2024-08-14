@@ -8,7 +8,7 @@ gpiozero==2.0.1
 #mqtt-io @ git+https://github.com/flyte/mqtt-io@2bb2f945ea47ed87f99ab4fc966d2dbbd47fc7c7
 mqtt-io
 RPi.GPIO @ git+https://github.com/mrk-its/raspberry-gpio-python
-#adafruit-circuitpython-dht
+adafruit-circuitpython-dht
 #Adafruit_DHT @ git+https://github.com/tirasol/Adafruit_Python_DHT
 paho-mqtt==1.6.1
 nfcpy==1.0.4
