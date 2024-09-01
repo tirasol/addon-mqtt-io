@@ -1,0 +1,80 @@
+mqtt:
+  host: 172.30.32.1
+  port: 1883
+  user: mqtt
+  password: mqtt
+  topic_prefix: mqtt-io
+  ha_discovery:
+   enabled: yes 
+   name: mqtt-io
+
+# GPIO
+gpio_modules:
+  - name: pi_gpio 
+    module: raspberrypi
+
+digital_outputs:
+  - name: RELAY1
+    module: pi_gpio
+    pin: 2
+    inverted: True 
+    initial: high 
+    publish_initial: True
+    ha_discovery:
+      name: RELAY1
+      device_class: switch
+  - name: RELAY2
+    module: pi_gpio
+    pin: 3
+    inverted: True 
+    initial: high 
+    publish_initial: True
+    ha_discovery:
+      name: RELAY2
+      device_class: switch
+  - name: LED1
+    module: pi_gpio
+    pin: 7
+    # inverted: True
+    # initial: high 
+    # publish_initial: True
+    ha_discovery:
+      name: LED1
+      device_class: switch
+  - name: LED2
+    module: pi_gpio
+    pin: 8
+    # inverted: True
+    # initial: high 
+    # publish_initial: True
+    ha_discovery:
+      name: LED2
+      device_class: switch
+  - name: LED3
+    module: pi_gpio
+    pin: 1
+    # inverted: True
+    # initial: high 
+    # publish_initial: True
+    ha_discovery:
+      name: LED3
+      device_class: switch
+  - name: LED4
+    module: pi_gpio
+    pin: 25
+    # inverted: True
+    # initial: high 
+    # publish_initial: True
+    ha_discovery:
+      name: LED4
+      device_class: switch
+
+digital_inputs:
+  - name: CONTACT_SENSOR
+    module: pi_gpio
+    pin: 26
+    inverted: False
+    pullup: True
+    ha_discovery:
+      name: CONTACT_SENSOR
+      component: binary_sensor 
