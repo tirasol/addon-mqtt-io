@@ -4,6 +4,9 @@ Exposes general purpose inputs and outputs (GPIO), hardware sensors and serial
 devices to an MQTT server. Ideal for single-board computers such as
 the Raspberry Pi.
 
+## mqtt-io config.yaml example
+<https://raw.githubusercontent.com/tirasol/addon-mqtt-io/main/mqtt-io/example/config.yaml>
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
