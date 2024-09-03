@@ -2,7 +2,7 @@ mqtt:
   host: 172.30.32.1
   port: 1883
   user: mqtt
-  password: mqtt
+  password: mqtt1234
   topic_prefix: mqtt-io
   ha_discovery:
    enabled: yes 
