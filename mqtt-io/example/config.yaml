@@ -52,7 +52,7 @@ digital_outputs:
       device_class: switch
   - name: LED3
     module: pi_gpio
-    pin: 1
+    pin: 23
     # inverted: True
     # initial: high 
     # publish_initial: True
@@ -61,7 +61,7 @@ digital_outputs:
       device_class: switch
   - name: LED4
     module: pi_gpio
-    pin: 25
+    pin: 24
     # inverted: True
     # initial: high 
     # publish_initial: True
