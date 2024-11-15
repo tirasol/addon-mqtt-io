@@ -1,9 +1,9 @@
 adafruit-circuitpython-ads1x15==2.2.19
-adafruit-circuitpython-ahtx0==1.0.21
-adafruit-circuitpython-mcp230xx==2.5.13
+adafruit-circuitpython-ahtx0==1.0.23
+adafruit-circuitpython-mcp230xx==2.5.15
 Adafruit-MCP3008==1.0.2
 bme680==1.1.1
-gpiod==2.2.1
+gpiod==2.2.2
 gpiozero==2.0.1
 mqtt-io @ git+https://github.com/flyte/mqtt-io@2bb2f945ea47ed87f99ab4fc966d2dbbd47fc7c7
 RPi.GPIO @ git+https://github.com/mrk-its/raspberry-gpio-python
@@ -17,5 +17,5 @@ pifacedigitalio==3.0.5
 pyserial==3.5
 RPi.bme280==0.2.4
 RPi.GPIO==0.7.1
-smbus2==0.4.3
+smbus2==0.5.0
 w1thermsensor==2.3.0
